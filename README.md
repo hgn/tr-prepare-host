@@ -29,7 +29,6 @@ NOTE: this will not work for Ubuntu 16.04 - you can enable systemd-networkd - bu
 
 
 ```
-sudo systemctl disable NetworkManager
 sudo systemctl enable systemd-networkd
 sudo systemctl enable systemd-resolved
 sudo systemctl start systemd-resolved
