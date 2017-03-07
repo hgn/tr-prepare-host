@@ -43,6 +43,15 @@ auto lo
 iface lo inet loopback
 ```
 
+## Setup WiFi Access Point
+
+Requirements:
+
+- No Password for now
+- Matches IP address Range
+
+http://andrewmichaelsmith.com/2013/08/raspberry-pi-wi-fi-honeypot/
+
 
 # Misc Information #
 
