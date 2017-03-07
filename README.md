@@ -56,6 +56,10 @@ http://andrewmichaelsmith.com/2013/08/raspberry-pi-wi-fi-honeypot/
 # Install Software
 
 ```
+sudo apt-get install python3-pip
+```
+
+```
 mkdir src
 cd src
 git clone https://github.com/hgn/foo-conf.git
