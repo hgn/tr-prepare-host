@@ -53,6 +53,18 @@ Requirements:
 http://andrewmichaelsmith.com/2013/08/raspberry-pi-wi-fi-honeypot/
 
 
+# Install Software
+
+```
+mkdir src
+cd src
+git clone https://github.com/hgn/foo-conf.git
+git clone https://github.com/hgn/ohnld.git
+git clone https://github.com/hgn/route-manager.git
+git clone --recursive https://github.com/protocollabs/dmprd.git
+```
+
+
 # Misc Information #
 
 
