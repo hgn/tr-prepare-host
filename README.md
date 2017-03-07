@@ -50,13 +50,41 @@ Requirements:
 - No Password for now
 - Matches IP address Range
 
+```
+sudo apt-get install -y hostapd dnsmasq
+
+sudo nano /etc/hostapd/hostapd.conf
+interface=wlan0
+driver=nl80211
+ssid=NotFreeWifi
+channel=1
+
+sudo nano /etc/init.d/hostapd
+DAEMON_CONF=/etc/hostapd/hostapd.conf
+
+sudo nano /etc/dnsmasq.conf
+log-facility=/var/log/dnsmasq.log
+address=/#/10.0.0.1
+interface=wlan0
+dhcp-range=10.0.0.10,10.0.0.250,12h
+no-resolv
+log-queries
+```
+
+
+
 http://andrewmichaelsmith.com/2013/08/raspberry-pi-wi-fi-honeypot/
 
+# Enable Forwading
+
+```
+sudo vim /etc/sysctl.d/99-sysctl.conf
+```
 
 # Install Software
 
 ```
-sudo apt-get install python3-pip
+sudo apt-get install python3-pip nftables
 ```
 
 ```
