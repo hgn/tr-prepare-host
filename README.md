@@ -70,7 +70,17 @@ dhcp-range=10.0.0.10,10.0.0.250,12h
 no-resolv
 log-queries
 ```
+Network
 
+```
+# /etc/systemd/network/50-static.network
+[Match]
+Name=wifi*
+
+[Network]
+Address=192.168.0.15/24
+Gateway=192.168.0.1
+```
 
 
 http://andrewmichaelsmith.com/2013/08/raspberry-pi-wi-fi-honeypot/
